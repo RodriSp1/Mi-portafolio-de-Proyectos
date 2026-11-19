@@ -17,8 +17,8 @@ export const proyectos = [
     titulo: 'Lista de tareas',
     descripcion: 'Agrega, completa y elimina tareas. Se guardan en localStorage.',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    demo: `https://github.com/RodriSp1/Lista-de-tarea-Ronit10-`,
-    codigo: `https://rodrisp1.github.io/Lista-de-tarea-Ronit10-/`,
+    demo: `https://rodrisp1.github.io/Lista-de-tarea-Ronit10-/`,
+    codigo: `https://github.com/RodriSp1/Lista-de-tarea-Ronit10-`,
   },
   {
     id: 2,
@@ -57,7 +57,7 @@ export const proyectos = [
     titulo: 'Catalogo de BearHue',
     descripcion: 'Formulario con validaciones hechas en JavaScript.',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    demo: `https://github.com/RodriSp1/Catalogo-Bearhue/settings/pages`,
+    demo: `https://rodrisp1.github.io/Catalogo-Bearhue/`,
     codigo: `https://github.com/RodriSp1/Catalogo-Bearhue`,
   },
   {
