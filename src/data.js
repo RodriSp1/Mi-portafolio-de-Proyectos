@@ -25,8 +25,8 @@ export const proyectos = [
     titulo: 'Calculadora',
     descripcion: 'Calculadora básica con operaciones, borrado y diseño responsivo.',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    demo: `${demo}/calculadora/`,
-    codigo: `${repo}/tree/main/calculadora`,
+    demo: `https://github.com/RodriSp1/Calculadora-Roni10`,
+    codigo: `https://rodrisp1.github.io/Calculadora-Roni10/`,
   },
   {
     id: 3,
