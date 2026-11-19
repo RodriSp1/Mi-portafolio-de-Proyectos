@@ -8,8 +8,8 @@ export const perfil = {
   linkedin: 'https://www.linkedin.com/in/rodri-sp1',
 }
 
-const repo = 'https://github.com/RodriSp1/tu-repositorio'
-const demo = 'https://RodriSp1.github.io/tu-repositorio'
+const repo = 'https://github.com/RodriSp1/Mi-portafolio-de-Proyectos'
+const demo = 'https://rodrisp1.github.io/Mi-portafolio-de-Proyectos/'
 
 export const proyectos = [
   {
