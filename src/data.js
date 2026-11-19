@@ -55,7 +55,7 @@ export const proyectos = [
   {
     id: 6,
     titulo: 'Catalogo de BearHue',
-    descripcion: 'Formulario con validaciones hechas en JavaScript.',
+    descripcion: 'Aplicación web para mostrar un catálogo de productos con un diseño atractivo y responsivo.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     demo: `https://rodrisp1.github.io/Catalogo-Bearhue/`,
     codigo: `https://github.com/RodriSp1/Catalogo-Bearhue`,
@@ -71,7 +71,7 @@ export const proyectos = [
   {
     id: 8,
     titulo: 'MonGui Acordes',
-    descripcion: 'Página web para aprender a tocar instrumentos musicales con un diseño atractivo y responsivo.',
+    descripcion: 'Página web para aprender los acordes de guitarra de manera interactiva y visual.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     demo: `https://rodrisp1.github.io/Mon-Gui-Acordes/`,
     codigo: `https://github.com/RodriSp1/Mon-Gui-Acordes`,
@@ -79,7 +79,7 @@ export const proyectos = [
   {
     id: 9,
     titulo: 'PokeRonit',
-    descripcion: 'Página web para aprender a tocar instrumentos musicales con un diseño atractivo y responsivo.',
+    descripcion: 'Página web para ver información sobre Pokémons usando la API de PokéAPI.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     demo: `https://rodrisp1.github.io/Pokedex-Ronit10/`,
     codigo: `https://github.com/RodriSp1/Pokedex-Ronit10`,
