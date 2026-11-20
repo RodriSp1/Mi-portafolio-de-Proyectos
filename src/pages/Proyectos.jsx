@@ -11,6 +11,7 @@ export default function Proyectos() {
 
   return (
     <section className="seccion">
+      <title>Proyectos · Portafolio</title>
       <h2>Proyectos</h2>
 
       <div className="filtros" role="group" aria-label="Filtrar por tecnología">

@@ -96,3 +96,19 @@ export const tecnologias = [
   'Responsive design',
   'Figma',
 ]
+
+// Contenido de la página "Sobre mí" (edítalo con tus propios datos)
+export const sobreMi = {
+  parrafos: [
+    'Soy estudiante de Ingeniería en tecnologías de software y me interesa el desarrollo web.',
+    'Este semestre hice varios proyectos con HTML, CSS y JavaScript, entre ellos una lista de tareas, una calculadora, una app del clima con API y un quiz. Los publiqué en GitHub Pages para poder probarlos y compartir su código.',
+    'Este portafolio lo construí con React y lo sigo mejorando conforme aprendo nuevas herramientas.',
+  ],
+  conocimientos: [
+    { titulo: 'Lenguajes', items: ['HTML', 'CSS', 'JavaScript'] },
+    { titulo: 'Librerías y frameworks', items: ['React', 'React Router', 'Framer Motion'] },
+    { titulo: 'Herramientas', items: ['Git y GitHub', 'Vite'] },
+    { titulo: 'Diseño', items: ['Figma', 'Responsive design'] },
+  ],
+  nivel: 'Estoy en formación: aprendo haciendo proyectos web y aplicando lo que veo en clase.',
+}

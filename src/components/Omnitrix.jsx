@@ -1,13 +1,8 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { aliens } from '../aliensData'
 
-// Cada "alienígena" representa una tecnología del portafolio.
-const formas = [
-  { alien: 'Cuatrobrazos', tech: 'HTML' },
-  { alien: 'Diamante', tech: 'CSS' },
-  { alien: 'XLR8', tech: 'JavaScript' },
-  { alien: 'Materia Gris', tech: 'React' },
-]
+const formas = aliens.slice(0, 4)
 
 export default function Omnitrix() {
   const [i, setI] = useState(-1)
