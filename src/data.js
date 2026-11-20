@@ -1,8 +1,8 @@
 export const perfil = {
-  nombre: 'Rodrigo Santini',
-  carrera: 'Ingeniería en tecnologías de software',
+  nombre: 'Rodri Santini',
+  carrera: 'Ingeniería en Tecnología de Software',
   intro:
-    'Estudio desarrollo web y este semestre hice varios proyectos con HTML, CSS y JavaScript. Aquí están los que más me gustaron, con su demo y su código.',
+    'Estudio Ingeniería en Tecnología de Software y armo proyectos web funcionales, herramientas interactivas y catálogos con HTML, CSS y JavaScript. Aquí tienes mis proyectos favoritos con su demo en vivo y código.',
   email: 'royfranrodrigosantinipacheco@gmail.com',
   github: 'https://github.com/RodriSp1',
   linkedin: 'https://www.linkedin.com/in/rodri-sp1',
@@ -15,7 +15,7 @@ export const proyectos = [
   {
     id: 1,
     titulo: 'Lista de tareas',
-    descripcion: 'Agrega, completa y elimina tareas. Se guardan en localStorage.',
+    descripcion: 'Organiza pendientes agregando, completando o eliminando tareas guardadas en localStorage.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     demo: `https://rodrisp1.github.io/Lista-de-tarea-Ronit10-/`,
     codigo: `https://github.com/RodriSp1/Lista-de-tarea-Ronit10-`,
@@ -23,7 +23,7 @@ export const proyectos = [
   {
     id: 2,
     titulo: 'Calculadora',
-    descripcion: 'Calculadora básica con operaciones, borrado y diseño responsivo.',
+    descripcion: 'Calculadora web con operaciones básicas, limpieza rápida y diseño adaptable.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     demo: `https://rodrisp1.github.io/Calculadora-Roni10/`,
     codigo: `https://github.com/RodriSp1/Calculadora-Roni10`,
@@ -31,7 +31,7 @@ export const proyectos = [
   {
     id: 3,
     titulo: 'App del clima',
-    descripcion: 'Consulta el clima de una ciudad usando una API.',
+    descripcion: 'Consulta el estado del tiempo por ciudad conectándose a una API externa.',
     tags: ['JavaScript', 'API'],
     demo: `https://rodrisp1.github.io/Clima-Ronit10-/`,
     codigo: `https://github.com/RodriSp1/Clima-Ronit10-`,
@@ -39,7 +39,7 @@ export const proyectos = [
   {
     id: 4,
     titulo: 'Control de gastos',
-    descripcion: 'Aplicación para gestionar y controlar los gastos personales.',
+    descripcion: 'Lleva el registro de ingresos y gastos personales para tener mayor claridad financiera.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     demo: `https://rodrisp1.github.io/Control-de-gastos-Ronit10/`,
     codigo: `https://github.com/RodriSp1/Control-de-gastos-Ronit10`,
@@ -47,15 +47,15 @@ export const proyectos = [
   {
     id: 5,
     titulo: 'Quiz de preguntas',
-    descripcion: 'Preguntas de opción múltiple con puntaje al final.',
+    descripcion: 'Juego de preguntas de opción múltiple con evaluación y puntaje al terminar.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     demo: `https://rodrisp1.github.io/Quizz-Ronit10-v1.1/`,
     codigo: `https://github.com/RodriSp1/Quizz-Ronit10-v1.1`,
   },
   {
     id: 6,
-    titulo: 'Catalogo de BearHue',
-    descripcion: 'Aplicación web para mostrar un catálogo de productos con un diseño atractivo y responsivo.',
+    titulo: 'Catálogo de BearHue',
+    descripcion: 'Vitrina web responsiva para presentar productos con enfoque visual y limpio.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     demo: `https://rodrisp1.github.io/Catalogo-Bearhue/`,
     codigo: `https://github.com/RodriSp1/Catalogo-Bearhue`,
@@ -63,7 +63,7 @@ export const proyectos = [
   {
     id: 7,
     titulo: 'MonGui',
-    descripcion: 'Página web para aprender a tocar instrumentos musicales con un diseño atractivo y responsivo.',
+    descripcion: 'Herramienta web enfocada en el aprendizaje musical y práctica de instrumentos con diseño responsivo.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     demo: `https://rodrisp1.github.io/MonGui/`,
     codigo: `https://github.com/RodriSp1/MonGui`,
@@ -71,7 +71,7 @@ export const proyectos = [
   {
     id: 8,
     titulo: 'MonGui Acordes',
-    descripcion: 'Página web para aprender los acordes de guitarra de manera interactiva y visual.',
+    descripcion: 'Aplicación interactiva para visualizar y practicar acordes de forma clara y directa.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     demo: `https://rodrisp1.github.io/Mon-Gui-Acordes/`,
     codigo: `https://github.com/RodriSp1/Mon-Gui-Acordes`,
@@ -79,7 +79,7 @@ export const proyectos = [
   {
     id: 9,
     titulo: 'PokeRonit',
-    descripcion: 'Página web para ver información sobre Pokémons usando la API de PokéAPI.',
+    descripcion: 'Explorador de Pokémon consumiendo PokéAPI para consultar datos y características.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     demo: `https://rodrisp1.github.io/Pokedex-Ronit10/`,
     codigo: `https://github.com/RodriSp1/Pokedex-Ronit10`,
@@ -94,10 +94,10 @@ export const tecnologias = [
   'Git y GitHub',
   'Vite',
   'Responsive design',
-  'Figma',
+  'Diseño minimalista',
 ]
 
-// Contenido de la página "Sobre mí" (edítalo con tus propios datos)
+// Contenido de la página "Sobre mí"
 export const sobreMi = {
   parrafos: [
     'Soy Rodri Santini, estudio Ingeniería en Tecnología de Software en la UAC y me enfoco en el desarrollo web y de software.',
