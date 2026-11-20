@@ -1,77 +1,73 @@
-import { perfil, proyectos, tecnologias } from './data'
+import { useEffect } from 'react'
+import { Routes, Route, NavLink, Link, Navigate, useLocation } from 'react-router-dom'
+import { AnimatePresence, motion } from 'framer-motion'
+import { perfil } from './data'
+import Inicio from './pages/Inicio'
+import Proyectos from './pages/Proyectos'
+import Sobre from './pages/Sobre'
+import Contacto from './pages/Contacto'
 
-function ProyectoCard({ proyecto }) {
-  return (
-    <article className="card">
-      <h3>{proyecto.titulo}</h3>
-      <p>{proyecto.descripcion}</p>
-      <ul className="tags">
-        {proyecto.tags.map((tag) => (
-          <li key={tag}>{tag}</li>
-        ))}
-      </ul>
-      <div className="botones">
-        <a className="btn btn-principal" href={proyecto.demo} target="_blank" rel="noreferrer">
-          Ver demo
-        </a>
-        <a className="btn" href={proyecto.codigo} target="_blank" rel="noreferrer">
-          Ver código
-        </a>
-      </div>
-    </article>
-  )
-}
+const enlaces = [
+  { to: '/', texto: 'Inicio', end: true },
+  { to: '/proyectos', texto: 'Proyectos' },
+  { to: '/sobre-mi', texto: 'Sobre mí' },
+  { to: '/contacto', texto: 'Contacto' },
+]
 
 export default function App() {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
   return (
     <>
       <header className="header">
-        <span className="logo">{perfil.nombre}</span>
-        <nav>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#tecnologias">Tecnologías</a>
-          <a href="#contacto">Contacto</a>
+        <Link to="/" className="logo">
+          <span className="logo-icono" aria-hidden="true" />
+          {perfil.nombre}
+        </Link>
+        <nav aria-label="Principal">
+          {enlaces.map((e) => (
+            <NavLink key={e.to} to={e.to} end={e.end}>
+              {e.texto}
+            </NavLink>
+          ))}
         </nav>
       </header>
 
-      <main>
-        <section className="hero">
-          <p className="carrera">{perfil.carrera}</p>
-          <h1>Hola, soy {perfil.nombre}.</h1>
-          <p className="intro">{perfil.intro}</p>
-          <a className="btn btn-principal" href="#proyectos">
-            Ver mis proyectos
-          </a>
-        </section>
+      {/* destello verde al cambiar de página */}
+      <motion.div
+        key={location.pathname}
+        className="flash"
+        aria-hidden="true"
+        initial={{ opacity: 0.85 }}
+        animate={{ opacity: 0 }}
+        transition={{ duration: 0.65, ease: 'easeOut' }}
+      />
 
-        <section id="proyectos" className="seccion">
-          <h2>Proyectos</h2>
-          <div className="grid">
-            {proyectos.map((p) => (
-              <ProyectoCard key={p.id} proyecto={p} />
-            ))}
-          </div>
-        </section>
+      <AnimatePresence mode="wait">
+        <motion.main
+          key={location.pathname}
+          className="pagina"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -16 }}
+          transition={{ duration: 0.3 }}
+        >
+          <Routes location={location}>
+            <Route path="/" element={<Inicio />} />
+            <Route path="/proyectos" element={<Proyectos />} />
+            <Route path="/sobre-mi" element={<Sobre />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </motion.main>
+      </AnimatePresence>
 
-        <section id="tecnologias" className="seccion">
-          <h2>Tecnologías</h2>
-          <ul className="techs">
-            {tecnologias.map((t) => (
-              <li key={t}>{t}</li>
-            ))}
-          </ul>
-        </section>
-      </main>
-
-      <footer id="contacto" className="footer">
-        <h2>Contacto</h2>
-        <p>Si quieres hablar conmigo, escríbeme o búscame aquí:</p>
-        <div className="links">
-          <a href={`mailto:${perfil.email}`}>{perfil.email}</a>
-          <a href={perfil.github} target="_blank" rel="noreferrer">GitHub</a>
-          <a href={perfil.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
-        </div>
-        <small>© {new Date().getFullYear()} {perfil.nombre}</small>
+      <footer className="footer">
+        <small>© {new Date().getFullYear()} {perfil.nombre} · Hecho con React</small>
       </footer>
     </>
   )
