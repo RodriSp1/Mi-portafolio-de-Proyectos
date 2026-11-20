@@ -100,15 +100,15 @@ export const tecnologias = [
 // Contenido de la página "Sobre mí" (edítalo con tus propios datos)
 export const sobreMi = {
   parrafos: [
-    'Soy estudiante de Ingeniería en tecnologías de software y me interesa el desarrollo web.',
-    'Este semestre hice varios proyectos con HTML, CSS y JavaScript, entre ellos una lista de tareas, una calculadora, una app del clima con API y un quiz. Los publiqué en GitHub Pages para poder probarlos y compartir su código.',
-    'Este portafolio lo construí con React y lo sigo mejorando conforme aprendo nuevas herramientas.',
+    'Soy Rodri Santini, estudio Ingeniería en Tecnología de Software en la UAC y me enfoco en el desarrollo web y de software.',
+    'Me gusta aterrizar lo que veo en clase en herramientas útiles y proyectos funcionales: desde aplicaciones interactivas como MonGui (para crear diagramas de acordes y rasgueos) hasta proyectos con Java, C, bases de datos en MariaDB y microcontroladores.',
+    'Además del código, me interesa el diseño limpio y minimalista, crear interfaces responsivas que funcionen bien en celular y seguir armando este portafolio con React conforme domino nuevas tecnologías.',
   ],
   conocimientos: [
     { titulo: 'Lenguajes', items: ['HTML', 'CSS', 'JavaScript'] },
     { titulo: 'Librerías y frameworks', items: ['React', 'React Router', 'Framer Motion'] },
     { titulo: 'Herramientas', items: ['Git y GitHub', 'Vite'] },
-    { titulo: 'Diseño', items: ['Figma', 'Responsive design'] },
+    { titulo: 'Diseño', items: ['Diseño minimalista', 'Responsive design'] },
   ],
-  nivel: 'Estoy en formación: aprendo haciendo proyectos web y aplicando lo que veo en clase.',
+  nivel: 'En constante práctica: aprendo construyendo aplicaciones reales, experimentando con código y puliendo cada detalle.',
 }
